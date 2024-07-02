@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #EAD9CE;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    width: 100vw;
+    margin-top: 40px;
+    border-bottom: 2px #382f2fc4 solid;
+}
+
+header,
+a {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.diamond-home {
+    height: 100px;
+    color: #000000;
+
+}
+
+
+.section-home,
+.section-about-us,
+.conteiner-contact-maps,
+.containe-maps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 670px;
+    width: 100%;
+    margin: 100px auto;
+    gap: 100px;
+
+}
+
+.text-home {
+    height: 416px;
+    width: 460px;
+    display: inline-block;
+}
+
+.text-principal,
+.text-abaut,
+.text-contact {
+    font-size: 45px;
+    font-weight: 500;
+    font-style: italic;
+    color: #000000;
+
+}
+
+.paragraf-home,
+p {
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    color: #000000;
+    margin: 15px 0;
+
+    line-height: 30px;
+
+}
+
+.button-home,
+.button-pag2 {
+    height: 49px;
+    width: 233px;
+    border-radius: 0 100px 100px 0;
+    background-color: #B07B54;
+    color: #EAD9CE;
+    font-size: 15px;
+    font-weight: 300;
+    border: none;
+
+}
+
+.img-home-left {
+    display: inline-block;
+    border-radius: 300px 0 0 300px;
+
+}
+
+#img-extra-home {
+    height: 603px;
+    width: 157px;
+    margin-left: 8px;
+}
+
+#whatsapp {
+    height: 10vh;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.section-maisvendidos,
+.section-contact {
+    background-color: #ffffff;
+}
+
+.conteiner-pag2,
+.conteiner-contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 16px;
+    padding-bottom: 30px;
+}
+
+.title2 {
+    font-size: 45px;
+    font-weight: 500;
+    font-style: italic;
+    color: #000000;
+
+}
+
+.img-pag2 {
+    margin: 0 11%;
+}
+
+.img-pecas,
+.img-pecas-insta {
+    height: 340px;
+    width: 341px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+
+
+}
+
+.button-pag2 {
+    width: 600px;
+    margin-bottom: 15px;
+}
+
+.section-about-us {
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.paragraf-about {
+    height: 388px;
+    width: 524px;
+
+}
+
+.conteiner-contact-maps {
+    flex-direction: column;
+}
+
+.text-contact {
+    display: block;
+    margin: 10px auto;
+}
+
+.img-pecas-insta {
+    width: 250px;
+    height: 245px;
+}
+
+footer {}
+
+@media screen and (max-width:1300px) {
+
+    .section-home {
+
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+
+    .img-home-left {
+        height: 500px;
+    }
+
+    #img-extra-home {
+        height: 500px;
+        width: 122px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .header {
+        justify-content: center;
+        height: 125px;
+        width: auto;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .diamond-home {
+        height: 42px;
+    }
+
+    .section-home,
+    .section-about-us {
+
+        flex-direction: column-reverse;
+        height: 100vh;
+        margin: 0;
+        gap: 0;
+    }
+
+    .img-home-left {
+        height: 230px;
+    }
+
+    #img-extra-home {
+        height: 230px;
+        width: 56px;
+    }
+
+    .text-home {
+        width: auto;
+        margin-left: 16px;
+    }
+
+    .text-principal,
+    .title2,
+    .text-abaut ,.text-contact
+    {
+    font-size: 27px;
+}
+
+.img-pag2 {
+    margin: 0;
+}
+
+.img-pecas,
+.img-pecas-insta {
+    height: 180px;
+    width: 177px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.button-pag2 {
+    width: 355px;
+}
+
+#img-about {
+    height: 164px;
+}
+
+.paragraf-about {
+    width: auto;
+}
+
+.containe-maps {
+    flex-direction: column;
+    height: auto;
+    margin: 40px auto;
+    gap: 0;
+}
+
+.conteiner-contact {
+    font-size: 8px;
+}
+
+#maps-story {
+    width: auto;
+    height: auto;
+}
+
+}
