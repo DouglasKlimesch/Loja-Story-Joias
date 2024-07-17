@@ -9,6 +9,8 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #EAD9CE;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -18,8 +20,9 @@ body {
     align-items: center;
     height: 75px;
     width: 100vw;
-    margin-top: 40px;
     border-bottom: 2px #382f2fc4 solid;
+    background-color: aliceblue;
+    position: fixed;
 }
 
 header,
@@ -46,23 +49,24 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 670px;
+    height: 100vh;
     width: 100%;
-    margin: 100px auto;
-    gap: 100px;
+    margin: 50px auto;
+    flex-direction: row;
+    gap: 20px;
 
 }
 
 .text-home {
-    height: 416px;
-    width: 460px;
-    display: inline-block;
+    height: 330px;
+    width: 300px;
+
 }
 
 .text-principal,
 .text-abaut,
 .text-contact {
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 500;
     font-style: italic;
     color: #000000;
@@ -95,16 +99,13 @@ p {
 }
 
 .img-home-left {
-    display: inline-block;
+
     border-radius: 300px 0 0 300px;
+    height: 500px;
 
 }
 
-#img-extra-home {
-    height: 603px;
-    width: 157px;
-    margin-left: 8px;
-}
+
 
 #whatsapp {
     height: 10vh;
@@ -132,20 +133,24 @@ p {
     font-weight: 500;
     font-style: italic;
     color: #000000;
+    margin-top: 52px;
 
 }
 
 .img-pag2 {
-    margin: 0 11%;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
+
 
 .img-pecas,
 .img-pecas-insta {
-    height: 340px;
-    width: 341px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    margin-left: 15px;
+    height: 250px;
+    width: 250px;
+
 
 
 }
@@ -157,17 +162,31 @@ p {
 
 .section-about-us {
     height: 100vh;
+    width: 100%;
     margin: 0 auto;
+
 }
 
 .paragraf-about {
     height: 388px;
-    width: 524px;
+    width: 450px;
 
+}
+
+#img-about {
+    height: 400px;
 }
 
 .conteiner-contact-maps {
     flex-direction: column;
+    margin-top: 70px;
+    gap: 0;
+    margin: 0;
+}
+
+.containe-maps {
+    height: 300px;
+    margin: 0;
 }
 
 .text-contact {
@@ -180,9 +199,18 @@ p {
     height: 245px;
 }
 
-footer {}
+footer {
+    height: 200px;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:900px) {
 
     .section-home {
 
@@ -205,9 +233,10 @@ footer {}
     .header {
         justify-content: center;
         height: 125px;
-        width: auto;
+        width: 100%;
         flex-direction: column;
-        margin-top: 10px;
+        position: relative;
+        padding-top: 20px;
     }
 
     .diamond-home {
@@ -218,19 +247,16 @@ footer {}
     .section-about-us {
 
         flex-direction: column-reverse;
-        height: 100vh;
+        height: auto;
         margin: 0;
-        gap: 0;
+        gap: 83px;
     }
 
     .img-home-left {
         height: 230px;
     }
 
-    #img-extra-home {
-        height: 230px;
-        width: 56px;
-    }
+
 
     .text-home {
         width: auto;
@@ -239,51 +265,65 @@ footer {}
 
     .text-principal,
     .title2,
-    .text-abaut ,.text-contact
-    {
-    font-size: 27px;
-}
+    .text-abaut,
+    .text-contact {
+        font-size: 27px;
+    }
 
-.img-pag2 {
-    margin: 0;
-}
+    .img-pag2 {
+        grid-template-columns: 150px 150px;
+        gap: 20px;
+    }
 
-.img-pecas,
-.img-pecas-insta {
-    height: 180px;
-    width: 177px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-}
+    .img-pecas,
+    .img-pecas-insta {
+        height: 120px;
+        width: 157px;
+    }
 
-.button-pag2 {
-    width: 355px;
-}
 
-#img-about {
-    height: 164px;
-}
+    .button-pag2 {
+       display: none;
+    }
 
-.paragraf-about {
-    width: auto;
-}
 
-.containe-maps {
-    flex-direction: column;
-    height: auto;
-    margin: 40px auto;
-    gap: 0;
-}
+    #img-about {
+        height: 200px;
+    }
 
-.conteiner-contact {
-    font-size: 8px;
-}
+    .paragraf-about,.text-abaut {
+        width: auto;
+        margin: 0 15px 0;
+    }
 
-#maps-story {
-    width: auto;
-    height: auto;
-}
+    .containe-maps {
+        flex-direction: column;
+        height: auto;
+        margin: 40px auto;
+        gap: 0;
+    }
+
+    .conteiner-contact {
+        font-size: 8px;
+    }
+
+    #maps-story {
+        width: auto;
+        height: auto;
+    }
+    footer {
+        flex-direction: row;
+        font-size: 8px;
+
+    }
+    footer h3 ,footer p {
+        display: none;
+    }
+    .footer{
+        display: flex;
+       font-size: 8px;
+
+    }
+
 
 }
